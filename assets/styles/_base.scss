@@ -1,0 +1,51 @@
+// Breakpoints for media queries
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@mixin media($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+    // If $mq-breakpoint is a key that exists in
+    // $mq-breakpoints, get and use the value
+    @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+      $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+    }
+    
+    @media screen and (min-width: #{$mq-breakpoint}) {
+      @content;
+    }
+}
+
+// body font size
+$browser-context: 16;
+
+// function to convert px to em
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em
+}
+
+html {
+    line-height: 1.2;
+    font-size: em($browser-context);
+    @media (min-width: 1200px) {
+        font-size: em($browser-context);
+    }
+    @media (max-width: 992px) {
+        font-size: em($browser-context);
+    }
+    @media (max-width: 768px) {
+        font-size: em($browser-context);
+    }
+    @media (max-width: 576px) {
+        font-size: em($browser-context);
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
