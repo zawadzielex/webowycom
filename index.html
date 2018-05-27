@@ -1,209 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webowy.com Aplikacje Internetowe</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,600i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css"/>
-    <link rel='stylesheet' id='slick'  href='node_modules/slick-carousel/slick/slick-theme.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='contact-form-7-css'  href='assets/styles/styles.css' type='text/css' media='all' />
-  </head>
-  <body>
-      <header>
-          <div class="container">
-              <div class="row justify-content-between">
-                  <a class="logo" href="" title="" rel="home">
-                    <img src="assets/images/logo.jpg" alt="Logo"/>
-                  </a>
 
-                  <input type="checkbox" id="menu-button" class="menu-buton" >
-                  <label class="menu-buton__img" for="menu-button"></label>
-                  <nav id="site-navigation" class="menu-primary" role="navigation">
-                      <ul class="menu">
-                          <li class="menu__item">
-                              <a href="#">Home</a>
-                          </li>
-                          <li class="menu__item">
-                              <a href="#">Technologies</a>
-                          </li>
-                          <li class="menu__item">
-                              <a href="#">Portfolio</a>
-                          </li>
-                          <li class="menu__item">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webowy.com Aplikacje Internetowe</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,600i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css" />
+  <link rel='stylesheet' id='slick' href='node_modules/slick-carousel/slick/slick-theme.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='contact-form-7-css' href='assets/styles/styles.css' type='text/css' media='all' />
+</head>
+
+<body>
+  <header class="unfixed">
+    <div class="container">
+      <div class="row justify-content-between">
+        <a class="logo" href="" title="" rel="home">
+          <img src="assets/images/logo.jpg" alt="Logo" />
+        </a>
+
+        <input type="checkbox" id="menu-button" class="menu-buton">
+        <label class="menu-buton__img" for="menu-button"></label>
+        <nav id="site-navigation" class="menu-primary" role="navigation">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#home">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#technologie">Technologie</a>
+            </li>
+            <li class="menu__item">
+              <a href="#zaufalinam">Zaufali nam</a>
+            </li>
+            <li class="menu__item">
+              <a href="#realizacje">Realizacje</a>
+            </li>
+            
+            <!-- <li class="menu__item">
                               <a href="#">About Us</a>
-                          </li>
-                          <li class="menu__item">
+                          </li> -->
+            <!-- <li class="menu__item">
                               <a href="#">Contact</a>
-                          </li>
-                      </ul>
-                  </nav>
+                          </li> -->
+          </ul>
+        </nav>
 
-              </div>
-          </div>
-      </header>
-      <section id="baner" class="baner">
-          <h1 class="baner__headline">Webowy.com has <span class="baner__headline__typed"></span></h1>
-      </section>
-      <section id="why" class="why section--light">
-          <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <h2>Why us?</h2>
-                </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                <div class="col-12 col-md-4">
-                    <h3>Passion for <strong>coding</strong></h3>
-                    <p>
-                        Wierzymy że globalna sieć, aplikacje i portale społecznościowe mogą prowadzić do niesamowitych osiągnięć o jakich wcześniej ludzie nie marzyli.
-                      </p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h3>Wkład w <strong>open source</strong></h3>
-                    <p>
-                        Od początku naszą misją jest chęć pomagania. Jesteśmy po to by doradzać, pomóc naszym klientom odnaleźć właściwą drogę.
-                    </p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h3>Postęp <strong>technologiczny</strong></h3>
-                    <p>
-                        Analizujemy każdą nową technologię która pojawia się na rynku i jeśli tylko spełnia oczekiwania naszych klientów proponujemy im ją. 
-                    </p>
-                </div>
-              </div>
-          </div>
-      </section>
-      <section class="how section--dark">
-          <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <h2>In numbers</h2>
-                </div>
-              </div>
-          </div>
-          <div class="container numbers">
-              <div class="row">
-                <div class="col-12 col-md-3">
-                    <h3>10</h3>
-                    <p>Lat doświadczenia</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h3>18</h3>
-                    <p>Zadowolonych partnerów</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h3>30+</h3>
-                    <p>Zrealizowanych projektów</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h3>1mln+</h3>
-                    <p>Lini kodu</p>
-                </div>
-              </div>
-          </div>
-      </section>
-      <section class="section--light">
-          <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <h2>Używamy między innymi</h2>
-                </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row center">
-                  <div class="col-12">
-                    <div class="logos">
-                      <div>
-                          <img src="assets/images/jslogo.jpg" />
-                      </div>
-                      <div>
-                          <img src="assets/images/reactlogo.jpg" />
-                      </div>
-                      <div>
-                          <img src="assets/images/webpacklogo.jpg" />
-                      </div>
-                      <div>
-                          <img src="assets/images/nodelogo.jpg" />
-                      </div>
-                      <div>
-                          <img src="assets/images/php.png" />
-                      </div>
-                      <div>
-                          <img src="assets/images/symfony.png" />
-                      </div>
-                      <div>
-                          <img src="assets/images/nodelogo.jpg" />
-                      </div>
-                    </div>
-                  </div>
+      </div>
+    </div>
+  </header>
+  <section id="home" class="baner">
+    <h1 class="baner__headline">Webowy.com has
+      <span class="baner__headline__typed"></span>
+    </h1>
+  </section>
+  <section id="why" class="why section--light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Zamieniamy idee w rzeczywistość</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <h3>Doradzamy
+            <strong>pomysłodawcom</strong>
+          </h3>
+          <p>
+            Poprzez połączenie naszego doświadczenie ze świata startupów oraz programistów mamy umiejętności aby dobierać najlepsze rozwiązania
+            dla systemów it.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3>Tworzymy innwacyjne
+            <strong>rozwiązania</strong>
+          </h3>
+          <p>
+            Sercem wszystkiego twórczość. Naszą pasją jest budowanie narzędzi i produktów które zmieniają życie ludzi. Wykorzystujemy
+            najnowsze rozwiązania aby zwiekszyć wydajność oraz jakość naszych produktów.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3>Dostarczamy produkt
+            <strong>na czas</strong>
+          </h3>
+          <p>
+            Wierzymy ze zaufanie jest najważniejszą rzeczą w relacjach biznesowych. Dzięki dziesięcioletniemu doświadczeniu wiemy jak
+            zaplanować prace aby deadline'y nie były nam straszne.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="how section--dark" id="liczby">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>W liczbach</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container numbers">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <h3>10</h3>
+          <p>Lat doświadczenia</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <h3>18</h3>
+          <p>Zadowolonych partnerów</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <h3>30+</h3>
+          <p>Zrealizowanych projektów</p>
+        </div>
+        <div class="col-12 col-md-3">
+          <h3>1mln+</h3>
+          <p>Lini kodu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section--light" id="technologie">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Używamy między innymi</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row center">
+        <div class="col-12">
+          <div class="logos">
+            <div>
+              <img src="assets/images/jslogo.jpg" />
+            </div>
+            <div>
+              <img src="assets/images/reactlogo.jpg" />
+            </div>
+            <div>
+              <img src="assets/images/webpacklogo.jpg" />
+            </div>
+            <div>
+              <img src="assets/images/nodelogo.jpg" />
+            </div>
+            <div>
+              <img src="assets/images/php.png" />
+            </div>
+            <div>
+              <img src="assets/images/symfony.png" />
+            </div>
 
-              </div>
           </div>
-      </section>
-      <section class="how section--dark">
-          <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <h2>Zaufali mi</h2>
-                </div>
-              </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="how section--dark" id="zaufalinam">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Zaufali mi</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container testimonials">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <blockquote>“Paweł jest bardzo rzetelnym programista. Ma odpowiednie umiejętności. Co go jednak wyróżnia to wybitne umiejętności
+            miękkie: bardzo mocna dyscyplina prac, zaangażowanie i ciągły rozwój. Nie ma problemu którego by nie rozwiązał.”</blockquote>
+          <div class="blockquote">
+            <img class="blockquote__image" src="assets/images/banaszkiewicz.png" />
+            <p class="blockquote__author">Karol Banaszkiewicz</p>
+            <p class="blockquote__company">CEO Displate.com</p>
           </div>
-          <div class="container testimonials">
-              <div class="row">
-                <div class="col-12 col-md-6">
-                    <blockquote>“Paweł jest bardzo rzetelnym programista. Ma odpowiednie umiejętności. Co go jednak wyróżnia to wybitne umiejętności miękkie: bardzo mocna dyscyplina prac, zaangażowanie i ciągły rozwój. Nie ma problemu którego by nie rozwiązał.”</blockquote>
-                    <div class="blockquote">
-                        <img class="blockquote__image" src="assets/images/banaszkiewicz.png" />
-                        <p class="blockquote__author">Karol Banaszkiewicz</p>
-                        <p class="blockquote__company">CEO Displate.com</p>
-                    </div>
-                   
-                </div>
-                <div class="col-12 col-md-6">
-                    <blockquote>“Webowy.com świetnie rozumie potrzeby biznesu. Wyróżniają go twarde umiejętności programowania ale też własna inicjatywa i umiejętność rozwiązywania problemów klienta”</blockquote>
-                    <div class="blockquote">
-                        <img class="blockquote__image" src="assets/images/maniecki.png" />
-                        <p class="blockquote__author">Wojciech Maniecki</p>
-                        <p class="blockquote__company">CEO LittleHome</p>
-                    </div>
-                    
-                  </div>
-              </div>
+
+        </div>
+        <div class="col-12 col-md-6">
+          <blockquote>“Webowy.com świetnie rozumie potrzeby biznesu. Wyróżniają go twarde umiejętności programowania ale też własna inicjatywa
+            i umiejętność rozwiązywania problemów klienta”</blockquote>
+          <div class="blockquote">
+            <img class="blockquote__image" src="assets/images/maniecki.png" />
+            <p class="blockquote__author">Wojciech Maniecki</p>
+            <p class="blockquote__company">CEO LittleHome</p>
           </div>
-      </section>
-      <section class="opinie" id="opinie" style="overflow: hidden;">
-          <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <h2>Realizacje</h2>
-                </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="opinie" style="overflow: hidden;" id="realizacje">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Realizacje</h2>
+          
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="opinie__container jsCarousel">
+            <div class="opinie__arrow-left jsArrowLeft">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                width="50px" height="50px" viewBox="0 0 199.404 199.404" style="enable-background:new 0 0 199.404 199.404;"
+                xml:space="preserve">
+                <g>
+                  <polygon points="135.412,0 35.709,99.702 135.412,199.404 163.695,171.119 92.277,99.702 163.695,28.285  " fill="#FFFFFF"></polygon>
+                </g>
+              </svg>
+            </div>
+            <div class="opinie__item jsCarouselItem level1">
+              <div class="opinie__item__header">LittleHome.pl</div>
+              <div class="opinie__item__text">
+                <img src="/assets/images/littlehome.jpg" >
               </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="opinie__container jsCarousel">
-                  <div class="opinie__arrow-left jsArrowLeft">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 199.404 199.404" style="enable-background:new 0 0 199.404 199.404;" xml:space="preserve">
-                      <g>
-                        <polygon points="135.412,0 35.709,99.702 135.412,199.404 163.695,171.119 92.277,99.702 163.695,28.285  " fill="#FFFFFF"></polygon>
-                      </g>
-                    </svg>	
-                  </div>
-                  <div class="opinie__item jsCarouselItem level1">
-                    <div class="opinie__item__header">LittleHome.pl</div>
-                    <div class="opinie__item__text"><img src="/assets/images/littlehome.jpg"></div>
-                    <div class="opinie__item__char">
-                        <svg version="1.1" id="linkicon" x="0px" y="0px"
-                        width="20px" height="20px" viewBox="0 0 457.03 457.03" style="enable-background:new 0 0 457.03 457.03; fill: #212121;"
-                        xml:space="preserve">
-                        <g>
-                          <path d="M421.512,207.074l-85.795,85.767c-47.352,47.38-124.169,47.38-171.529,0c-7.46-7.439-13.296-15.821-18.421-24.465
+              <div class="opinie__item__char">
+                <svg version="1.1" id="linkicon" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 457.03 457.03" style="enable-background:new 0 0 457.03 457.03; fill: #212121;"
+                  xml:space="preserve">
+                  <g>
+                    <path d="M421.512,207.074l-85.795,85.767c-47.352,47.38-124.169,47.38-171.529,0c-7.46-7.439-13.296-15.821-18.421-24.465
                             l39.864-39.861c1.895-1.911,4.235-3.006,6.471-4.296c2.756,9.416,7.567,18.33,14.972,25.736c23.648,23.667,62.128,23.634,85.762,0
                             l85.768-85.765c23.666-23.664,23.666-62.135,0-85.781c-23.635-23.646-62.105-23.646-85.768,0l-30.499,30.532
                             c-24.75-9.637-51.415-12.228-77.373-8.424l64.991-64.989c47.38-47.371,124.177-47.371,171.557,0
@@ -212,101 +232,106 @@
                             c7.388,7.39,12.204,16.302,14.986,25.706c2.249-1.307,4.56-2.369,6.454-4.266l39.861-39.845
                             c-5.092-8.678-10.958-17.03-18.421-24.477c-47.348-47.371-124.172-47.371-171.543,0L35.526,249.96
                             c-47.366,47.385-47.366,124.172,0,171.553c47.371,47.356,124.177,47.356,171.547,0l65.008-65.003
-                            C246.109,360.336,219.437,357.723,194.708,348.104z"/>
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="opinie__item jsCarouselItem level0">
-                    <div class="opinie__item__header">Porady Pracuj.pl</div>
-                    <div class="opinie__item__text"><img src="/assets/images/pracuj.jpg"></div>
-                    <div class="opinie__item__char">
-                        <svg version="1.1" id="linkicon" x="0px" y="0px"
-                          width="20px" height="20px" viewBox="0 0 457.03 457.03" style="enable-background:new 0 0 457.03 457.03; fill: #212121;"
-                          xml:space="preserve">
-                        <g>
-                          <path d="M421.512,207.074l-85.795,85.767c-47.352,47.38-124.169,47.38-171.529,0c-7.46-7.439-13.296-15.821-18.421-24.465
-                            l39.864-39.861c1.895-1.911,4.235-3.006,6.471-4.296c2.756,9.416,7.567,18.33,14.972,25.736c23.648,23.667,62.128,23.634,85.762,0
-                            l85.768-85.765c23.666-23.664,23.666-62.135,0-85.781c-23.635-23.646-62.105-23.646-85.768,0l-30.499,30.532
-                            c-24.75-9.637-51.415-12.228-77.373-8.424l64.991-64.989c47.38-47.371,124.177-47.371,171.557,0
-                            C468.869,82.897,468.869,159.706,421.512,207.074z M194.708,348.104l-30.521,30.532c-23.646,23.634-62.128,23.634-85.778,0
-                            c-23.648-23.667-23.648-62.138,0-85.795l85.778-85.767c23.665-23.662,62.121-23.662,85.767,0
-                            c7.388,7.39,12.204,16.302,14.986,25.706c2.249-1.307,4.56-2.369,6.454-4.266l39.861-39.845
-                            c-5.092-8.678-10.958-17.03-18.421-24.477c-47.348-47.371-124.172-47.371-171.543,0L35.526,249.96
-                            c-47.366,47.385-47.366,124.172,0,171.553c47.371,47.356,124.177,47.356,171.547,0l65.008-65.003
-                            C246.109,360.336,219.437,357.723,194.708,348.104z"/>
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-  
-                  <div class="opinie__item jsCarouselItem level-1">
-                    <div class="opinie__item__header">Emplo.com</div>
-                    <div class="opinie__item__text"><img src="/assets/images/emplo.jpg"></div>
-                    <div class="opinie__item__char">
-                      <svg version="1.1" id="linkicon" x="0px" y="0px"
-                          width="20px" height="20px" viewBox="0 0 457.03 457.03" style="enable-background:new 0 0 457.03 457.03; fill: #212121;"
-                          xml:space="preserve">
-                        <g>
-                          <path d="M421.512,207.074l-85.795,85.767c-47.352,47.38-124.169,47.38-171.529,0c-7.46-7.439-13.296-15.821-18.421-24.465
-                            l39.864-39.861c1.895-1.911,4.235-3.006,6.471-4.296c2.756,9.416,7.567,18.33,14.972,25.736c23.648,23.667,62.128,23.634,85.762,0
-                            l85.768-85.765c23.666-23.664,23.666-62.135,0-85.781c-23.635-23.646-62.105-23.646-85.768,0l-30.499,30.532
-                            c-24.75-9.637-51.415-12.228-77.373-8.424l64.991-64.989c47.38-47.371,124.177-47.371,171.557,0
-                            C468.869,82.897,468.869,159.706,421.512,207.074z M194.708,348.104l-30.521,30.532c-23.646,23.634-62.128,23.634-85.778,0
-                            c-23.648-23.667-23.648-62.138,0-85.795l85.778-85.767c23.665-23.662,62.121-23.662,85.767,0
-                            c7.388,7.39,12.204,16.302,14.986,25.706c2.249-1.307,4.56-2.369,6.454-4.266l39.861-39.845
-                            c-5.092-8.678-10.958-17.03-18.421-24.477c-47.348-47.371-124.172-47.371-171.543,0L35.526,249.96
-                            c-47.366,47.385-47.366,124.172,0,171.553c47.371,47.356,124.177,47.356,171.547,0l65.008-65.003
-                            C246.109,360.336,219.437,357.723,194.708,348.104z"/>
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="opinie__item jsCarouselItem level-2">
-                    <div class="opinie__item__header">StrongerPicture.com</div>
-                    <div class="opinie__item__text"><img src="/assets/images/strongerpicture.jpg"></div>
-                    <div class="opinie__item__char">
-                        <svg version="1.1" id="linkicon" x="0px" y="0px"
-                        width="20px" height="20px" viewBox="0 0 457.03 457.03" style="enable-background:new 0 0 457.03 457.03; fill: #212121;"
-                        xml:space="preserve">
-                        <g>
-                          <path d="M421.512,207.074l-85.795,85.767c-47.352,47.38-124.169,47.38-171.529,0c-7.46-7.439-13.296-15.821-18.421-24.465
-                            l39.864-39.861c1.895-1.911,4.235-3.006,6.471-4.296c2.756,9.416,7.567,18.33,14.972,25.736c23.648,23.667,62.128,23.634,85.762,0
-                            l85.768-85.765c23.666-23.664,23.666-62.135,0-85.781c-23.635-23.646-62.105-23.646-85.768,0l-30.499,30.532
-                            c-24.75-9.637-51.415-12.228-77.373-8.424l64.991-64.989c47.38-47.371,124.177-47.371,171.557,0
-                            C468.869,82.897,468.869,159.706,421.512,207.074z M194.708,348.104l-30.521,30.532c-23.646,23.634-62.128,23.634-85.778,0
-                            c-23.648-23.667-23.648-62.138,0-85.795l85.778-85.767c23.665-23.662,62.121-23.662,85.767,0
-                            c7.388,7.39,12.204,16.302,14.986,25.706c2.249-1.307,4.56-2.369,6.454-4.266l39.861-39.845
-                            c-5.092-8.678-10.958-17.03-18.421-24.477c-47.348-47.371-124.172-47.371-171.543,0L35.526,249.96
-                            c-47.366,47.385-47.366,124.172,0,171.553c47.371,47.356,124.177,47.356,171.547,0l65.008-65.003
-                            C246.109,360.336,219.437,357.723,194.708,348.104z"/>
-                        </g>
-                    </svg>
-                    </div>
-                  </div>
-                  <div class="opinie__arrow-right jsArrowRight">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 199.404 199.404" style="enable-background:new 0 0 199.404 199.404;" xml:space="preserve">
-                      <g>
-                        <polygon points="63.993,199.404 163.695,99.702 63.993,0 35.709,28.285 107.127,99.702 35.709,171.119  " fill="#FFFFFF"></polygon>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
+                            C246.109,360.336,219.437,357.723,194.708,348.104z" />
+                  </g>
+                </svg>
               </div>
             </div>
+            <div class="opinie__item jsCarouselItem level0">
+              <div class="opinie__item__header">Porady Pracuj.pl</div>
+              <div class="opinie__item__text">
+                <img src="/assets/images/pracuj.jpg" >
+              </div>
+              <div class="opinie__item__char">
+                <svg version="1.1" id="linkicon" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 457.03 457.03" style="enable-background:new 0 0 457.03 457.03; fill: #212121;"
+                  xml:space="preserve">
+                  <g>
+                    <path d="M421.512,207.074l-85.795,85.767c-47.352,47.38-124.169,47.38-171.529,0c-7.46-7.439-13.296-15.821-18.421-24.465
+                            l39.864-39.861c1.895-1.911,4.235-3.006,6.471-4.296c2.756,9.416,7.567,18.33,14.972,25.736c23.648,23.667,62.128,23.634,85.762,0
+                            l85.768-85.765c23.666-23.664,23.666-62.135,0-85.781c-23.635-23.646-62.105-23.646-85.768,0l-30.499,30.532
+                            c-24.75-9.637-51.415-12.228-77.373-8.424l64.991-64.989c47.38-47.371,124.177-47.371,171.557,0
+                            C468.869,82.897,468.869,159.706,421.512,207.074z M194.708,348.104l-30.521,30.532c-23.646,23.634-62.128,23.634-85.778,0
+                            c-23.648-23.667-23.648-62.138,0-85.795l85.778-85.767c23.665-23.662,62.121-23.662,85.767,0
+                            c7.388,7.39,12.204,16.302,14.986,25.706c2.249-1.307,4.56-2.369,6.454-4.266l39.861-39.845
+                            c-5.092-8.678-10.958-17.03-18.421-24.477c-47.348-47.371-124.172-47.371-171.543,0L35.526,249.96
+                            c-47.366,47.385-47.366,124.172,0,171.553c47.371,47.356,124.177,47.356,171.547,0l65.008-65.003
+                            C246.109,360.336,219.437,357.723,194.708,348.104z" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <div class="opinie__item jsCarouselItem level-1">
+              <div class="opinie__item__header">Emplo.com</div>
+              <div class="opinie__item__text">
+                <img src="/assets/images/emplo.jpg">
+              </div>
+              <div class="opinie__item__char">
+                <svg version="1.1" id="linkicon" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 457.03 457.03" style="enable-background:new 0 0 457.03 457.03; fill: #212121;"
+                  xml:space="preserve">
+                  <g>
+                    <path d="M421.512,207.074l-85.795,85.767c-47.352,47.38-124.169,47.38-171.529,0c-7.46-7.439-13.296-15.821-18.421-24.465
+                            l39.864-39.861c1.895-1.911,4.235-3.006,6.471-4.296c2.756,9.416,7.567,18.33,14.972,25.736c23.648,23.667,62.128,23.634,85.762,0
+                            l85.768-85.765c23.666-23.664,23.666-62.135,0-85.781c-23.635-23.646-62.105-23.646-85.768,0l-30.499,30.532
+                            c-24.75-9.637-51.415-12.228-77.373-8.424l64.991-64.989c47.38-47.371,124.177-47.371,171.557,0
+                            C468.869,82.897,468.869,159.706,421.512,207.074z M194.708,348.104l-30.521,30.532c-23.646,23.634-62.128,23.634-85.778,0
+                            c-23.648-23.667-23.648-62.138,0-85.795l85.778-85.767c23.665-23.662,62.121-23.662,85.767,0
+                            c7.388,7.39,12.204,16.302,14.986,25.706c2.249-1.307,4.56-2.369,6.454-4.266l39.861-39.845
+                            c-5.092-8.678-10.958-17.03-18.421-24.477c-47.348-47.371-124.172-47.371-171.543,0L35.526,249.96
+                            c-47.366,47.385-47.366,124.172,0,171.553c47.371,47.356,124.177,47.356,171.547,0l65.008-65.003
+                            C246.109,360.336,219.437,357.723,194.708,348.104z" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="opinie__item jsCarouselItem level-2">
+              <div class="opinie__item__header">StrongerPicture.com</div>
+              <div class="opinie__item__text">
+                <img src="/assets/images/strongerpicture.jpg">
+              </div>
+              <div class="opinie__item__char">
+                <svg version="1.1" id="linkicon" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 457.03 457.03" style="enable-background:new 0 0 457.03 457.03; fill: #212121;"
+                  xml:space="preserve">
+                  <g>
+                    <path d="M421.512,207.074l-85.795,85.767c-47.352,47.38-124.169,47.38-171.529,0c-7.46-7.439-13.296-15.821-18.421-24.465
+                            l39.864-39.861c1.895-1.911,4.235-3.006,6.471-4.296c2.756,9.416,7.567,18.33,14.972,25.736c23.648,23.667,62.128,23.634,85.762,0
+                            l85.768-85.765c23.666-23.664,23.666-62.135,0-85.781c-23.635-23.646-62.105-23.646-85.768,0l-30.499,30.532
+                            c-24.75-9.637-51.415-12.228-77.373-8.424l64.991-64.989c47.38-47.371,124.177-47.371,171.557,0
+                            C468.869,82.897,468.869,159.706,421.512,207.074z M194.708,348.104l-30.521,30.532c-23.646,23.634-62.128,23.634-85.778,0
+                            c-23.648-23.667-23.648-62.138,0-85.795l85.778-85.767c23.665-23.662,62.121-23.662,85.767,0
+                            c7.388,7.39,12.204,16.302,14.986,25.706c2.249-1.307,4.56-2.369,6.454-4.266l39.861-39.845
+                            c-5.092-8.678-10.958-17.03-18.421-24.477c-47.348-47.371-124.172-47.371-171.543,0L35.526,249.96
+                            c-47.366,47.385-47.366,124.172,0,171.553c47.371,47.356,124.177,47.356,171.547,0l65.008-65.003
+                            C246.109,360.336,219.437,357.723,194.708,348.104z" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="opinie__arrow-right jsArrowRight">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                width="50px" height="50px" viewBox="0 0 199.404 199.404" style="enable-background:new 0 0 199.404 199.404;"
+                xml:space="preserve">
+                <g>
+                  <polygon points="63.993,199.404 163.695,99.702 63.993,0 35.709,28.285 107.127,99.702 35.709,171.119  " fill="#FFFFFF"></polygon>
+                </g>
+              </svg>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
   </section>
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-3">
           <h3 class="footer__title">Paweł Zawadzki</h3>
           <p class="footer__description">Webowy.com Aplikacje Internetowe
             <br> ul. Bolesławicka 12/133
             <br> 03-325 Warszawa
           </p>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-3">
           <h3 class="footer__title">Adres Biura</h3>
           <p class="footer__description">ul. Wawrzyszewska 9/61
             <br> 01-162 Warszawa
@@ -315,7 +340,7 @@
             <br> biuro@webowy.com
           </p>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-2">
           <div class="">
             <ul id="" class="footer__menu">
               <li class="">
@@ -331,22 +356,38 @@
                 <a href="">About Us</a>
               </li>
               <li class="">
-                  <a href="">Contact</a>
-                </li>
+                <a href="">Contact</a>
+              </li>
             </ul>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="social-icons">
+            <a href="https://github.com/zawadzielex" target="_blank" rel="nofollow">
+              <img src="/assets/images/github.png">
+            </a>
+            <a href="https://www.youtube.com/channel/UCxohEMbgY7wP-Xn_n1r23ww" target="_blank" rel="nofollow">
+              <img src="/assets/images/youtube.png">
+            </a>
+            <a href="https://www.linkedin.com/in/pawe%C5%82-zawadzki-1a24187/" target="_blank" rel="nofollow">
+              <img src="/assets/images/linkedin.png">
+            </a>
+            <a href="https://web.facebook.com/Webowy-Software-House-251901268166810/" target="_blank" rel="nofollow">
+              <img src="/assets/images/facebook.png">
+            </a>
           </div>
         </div>
       </div>
     </div>
   </footer>
-      <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-      <script src="node_modules/typed.js/lib/typed.js" ></script>
-      <script src="node_modules/particles.js/particles.js" ></script>
-      <script src="node_modules/slick-carousel/slick/slick.min.js" ></script>
-      <script src="assets/scripts/index.js" ></script>
-      
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="node_modules/typed.js/lib/typed.js"></script>
+  <script src="node_modules/particles.js/particles.js"></script>
+  <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+  <script src="assets/scripts/index.js"></script>
+
+</body>
+
 </html>

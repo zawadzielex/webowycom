@@ -9,17 +9,18 @@ var options = {
 
 var typed = new Typed(".baner__headline__typed", options);
 
-particlesJS.load('baner', './assets/scripts/particles.json', function() {
-  console.log('callback - particles.js config loaded');
+particlesJS.load('home', './assets/scripts/particles.json', function() {
+  console.log($('.baner .particles-js-canvas-el'));
+  $('.baner .particles-js-canvas-el').css({"top": 115});
 });
 
-particlesJS.load('opinie', './assets/scripts/particles2.json', function() {
+particlesJS.load('realizacje', './assets/scripts/particles2.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
 $(document).scroll(function(){
   var top = $(document).scrollTop() - $('.baner').position().top;
-  $('.baner .particles-js-canvas-el').css({"top": top +80 - (top/3)});
+  $('.baner .particles-js-canvas-el').css({"top": top +115 - (top/3)});
 });
 
 $(document).scroll(function(){
@@ -28,6 +29,20 @@ $(document).scroll(function(){
 });
 
 opinionCarousel();
+createSticky($("header"));
+
+function createSticky(sticky) {
+	
+	if (typeof sticky !== "undefined") {
+
+		var	pos = sticky.offset().top,
+            win = $(window);
+			
+		win.on("scroll", function() {
+            win.scrollTop() >= pos+45 ? sticky.addClass("fixed").removeClass("unfixed") : sticky.removeClass("fixed").addClass("unfixed");  
+		});			
+	}
+}
 
 function opinionCarousel(){
   var $carousel = $(".jsCarousel"),
@@ -86,3 +101,13 @@ function opinionCarousel(){
     autoplaySpeed: 2000,
     arrows: false
   });
+
+
+  $(".menu__item a").click(function(e) {
+    e.preventDefault();
+    let id = $(this).attr("href");
+    console.log(id)
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - 80
+    }, 1200);
+});
