@@ -78,6 +78,7 @@ function opinionCarousel(){
 
       });
 
+
       function changeView(order, $this) {
           var level = /level/;
           $this.attr("class").split(" ").forEach(function(item){
