@@ -7,14 +7,18 @@
   background: #212121;
   width:100%;
   height: calc(100vh);
-
+  padding: 0 15px;
  
 }
 .baner__headline {
-  font-size: em(80);
+  font-size: em(60);
   font-weight: 100;
   color: #f2f2f2a8;
   margin-top: 65px;
+  @include media(md) { 
+    font-size: em(80);
+  }
+
 }
 .baner__headline__typed {
  // text-decoration: underline;

@@ -1,3 +1,5 @@
+@import './../../node_modules/slick-carousel/slick/slick.scss';
+@import './../../node_modules/slick-carousel/slick/slick-theme.scss';
 @import 'assets/bootstrap/bootstrap-grid.scss';  
 @import '_varibles.scss';
 @import '_base.scss';
@@ -8,6 +10,8 @@
 @import '_opinie.scss';
 @import '_footer.scss';
 @import '_social-icons.scss';
+
+
 section {
   float: left;
   position: relative;
@@ -19,7 +23,7 @@ blockquote {
 }
 .blockquote {
   position: relative;
-  float: left;
+  float: left; 
   width: 100%;
   min-height: 120px;
 }
@@ -49,15 +53,21 @@ blockquote {
   }
 }
 h2 {
-  font-size: em(60);
+  font-size: em(40);
   font-weight: 100;
   text-align: center;
+  @include media(md) { 
+    font-size: em(60);
+  }
 }
 h3 {
-  font-size: em(30);
+  font-size: em(25);
   font-weight: 100;
   strong {
     color: #1a80b6;
+  }
+  @include media(md) { 
+    font-size: em(30);
   }
 }
 .section--dark {

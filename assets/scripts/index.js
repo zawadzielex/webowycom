@@ -1,5 +1,10 @@
+const Typed = require('./../../node_modules/typed.js');
+const particlesJS = require('./../../node_modules/particles.js');
+const slick = require('./../../node_modules/slick-carousel');
+const $ = require('./../../node_modules/jquery');
+
 var options = {
-  strings: ["passion.", "knowledge.", "technology."],
+  strings: ["startup.", "aplikację.", "stronę www.", "sklep internetowy."],
   typeSpeed: 80,
   backSpeed: 40,
   backDelay: 1000,
@@ -9,12 +14,14 @@ var options = {
 
 var typed = new Typed(".baner__headline__typed", options);
 
-particlesJS.load('home', './assets/scripts/particles.json', function() {
+console.log(particlesJS);
+
+window.particlesJS.load('home', './assets/scripts/particles.json', function() {
   console.log($('.baner .particles-js-canvas-el'));
   $('.baner .particles-js-canvas-el').css({"top": 115});
 });
 
-particlesJS.load('realizacje', './assets/scripts/particles2.json', function() {
+window.particlesJS.load('realizacje', './assets/scripts/particles2.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
