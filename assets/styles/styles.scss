@@ -10,6 +10,7 @@
 @import '_opinie.scss';
 @import '_footer.scss';
 @import '_social-icons.scss';
+@import '_github-calendar.scss'; 
 
 
 section {
@@ -33,6 +34,10 @@ blockquote {
 }
 .blockquote__author {
   margin-top: 25px;
+  a {
+    text-decoration: none;
+    color: $color-light;
+  }
 }
 .blockquote__company {
   margin-top: -15px;
@@ -81,22 +86,24 @@ h3 {
     position: absolute;
     display: block;
     width: 100%;
-    height:30px;
+    height: 30px;
     left: 0;
-    top:-15px;
-    background: $color-primary;
-    transform: rotate(1deg);
+    top: -29px;
+    -webkit-clip-path: polygon(0 7%, 0% 100%, 100% 100%);
+    clip-path: polygon(0 7%, 0% 100%, 100% 100%);
+    background: #212121;
   }
   &:after {
     content: " ";
     position: absolute;
     display: block;
     width: 100%;
-    height:30px;
+    height: 30px;
     left: 0;
-    bottom:-15px;
-    background: $color-primary;
-    transform: rotate(1deg);
+    bottom: -29px;
+    background: #212121;
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 37%);
+    clip-path: polygon(100% 0, 0 0, 100% 93%);
   }
 }
 .section--light { 

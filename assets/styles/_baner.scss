@@ -13,7 +13,7 @@
 .baner__headline {
   font-size: em(60);
   font-weight: 100;
-  color: #f2f2f2a8;
+  color: $color-light;
   margin-top: 65px;
   @include media(md) { 
     font-size: em(80);

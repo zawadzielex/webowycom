@@ -100,8 +100,6 @@ function opinionCarousel(){
 
 }
 
-
-
   $('.logos').slick({
     slidesToShow: 4,
     slidesToScroll: 1,

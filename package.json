@@ -18,10 +18,11 @@
     "optimize-css-assets-webpack-plugin": "^4.0.2",
     "replace-webpack-plugin": "^0.1.2",
     "uglifyjs-webpack-plugin": "^1.2.5",
-    "webpack": "^4.9.1"
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
   },
   "scripts": {
-    "start": "http-server ./dist/",
+    "start": "webpack && http-server ./dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
